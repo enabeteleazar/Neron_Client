@@ -12,9 +12,6 @@ const PORT = parseInt(process.env.PORT || '8080', 10);
 let CORE_URL = process.env.NERON_CORE_URL || 'http://localhost:8000';
 let STT_URL  = process.env.NERON_STT_URL  || 'http://localhost:8001';
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-
 app.use((req, res, next) => {
   const start = Date.now();
   res.on('finish', () => {
@@ -32,7 +29,7 @@ app.get('/api/config', (_req, res) => {
   res.json({ coreUrl: CORE_URL, sttUrl: STT_URL });
 });
 
-app.post('/api/config', (req, res) => {
+app.post('/api/config', express.json(), (req, res) => {
   const { coreUrl, sttUrl } = req.body;
   if (coreUrl) CORE_URL = coreUrl.replace(/\/$/, '');
   if (sttUrl)  STT_URL  = sttUrl.replace(/\/$/, '');
@@ -46,27 +43,27 @@ app.post('/api/stt', async (req, res) => {
     req.on('data', chunk => chunks.push(chunk));
     req.on('end', async () => {
       const body = Buffer.concat(chunks);
-      const response = await fetch(`${STT_URL}/speech`, {
+      const contentType = req.headers['content-type'] || '';
+      console.log(`STT proxy -> ${STT_URL}/transcribe (${body.length} bytes, ${contentType})`);
+      const response = await fetch(`${STT_URL}/transcribe`, {
         method: 'POST',
         headers: {
-          'content-type': req.headers['content-type'],
-          'content-length': body.length,
+          'content-type': contentType,
+          'content-length': String(body.length),
         },
         body,
       });
-      if (!response.ok) {
-        const text = await response.text();
-        return res.status(response.status).json({ error: text });
-      }
-      res.json(await response.json());
+      const data = await response.json();
+      if (!response.ok) return res.status(response.status).json(data);
+      res.json(data);
     });
   } catch (e) {
     console.error('STT proxy error:', e);
-    res.status(502).json({ error: `STT inaccessible : ${e.message}` });
+    res.status(502).json({ error: e.message });
   }
 });
 
-app.post('/api/core', async (req, res) => {
+app.post('/api/core', express.json(), async (req, res) => {
   try {
     const response = await fetch(`${CORE_URL}/input/text`, {
       method: 'POST',

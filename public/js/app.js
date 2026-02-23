@@ -139,7 +139,7 @@
   function sendToSTT(blob) {
     var formData = new FormData();
     var ext = blob.type.includes('mp4') ? 'mp4' : blob.type.includes('ogg') ? 'ogg' : 'webm';
-    formData.append('file', blob, 'audio.' + ext);
+    formData.append('file', blob, 'audio.wav');
     return withTimeout(fetch('/api/stt', { method: 'POST', body: formData }), FETCH_TIMEOUT_MS)
       .then(function(response) {
         if (!response.ok) return response.json().then(function(d) { throw new Error(d.error || 'STT ' + response.status); });
