@@ -1,0 +1,19 @@
+{
+“name”: “neron-web”,
+“version”: “1.0.0”,
+“description”: “Neron — Interface vocale web”,
+“type”: “module”,
+“main”: “server/index.js”,
+“scripts”: {
+“start”: “node server/index.js”,
+“dev”: “node –watch server/index.js”,
+“gen-cert”: “openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes -subj "/CN=neron-local"”
+},
+“dependencies”: {
+“express”: “^5.0.1”
+},
+“engines”: {
+“node”: “>=18.0.0”
+},
+“private”: true
+}
