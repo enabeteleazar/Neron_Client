@@ -1,0 +1,727 @@
+2026-04-06 21:22:32: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:22:38: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:22:44: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:22:50: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:22:56: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:23:02: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:23:08: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:23:14: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:23:20: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:23:25:  ⨯ Failed to start server
+2026-04-06 21:23:25: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:23:25:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:23:25:     at new Promise (<anonymous>) {
+2026-04-06 21:23:25:   code: 'EADDRINUSE',
+2026-04-06 21:23:25:   errno: -98,
+2026-04-06 21:23:25:   syscall: 'listen',
+2026-04-06 21:23:25:   address: '::',
+2026-04-06 21:23:25:   port: 8080
+2026-04-06 21:23:25: }
+2026-04-06 21:23:26: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:23:31:  ⨯ Failed to start server
+2026-04-06 21:23:31: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:23:31:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:23:31:     at new Promise (<anonymous>) {
+2026-04-06 21:23:31:   code: 'EADDRINUSE',
+2026-04-06 21:23:31:   errno: -98,
+2026-04-06 21:23:31:   syscall: 'listen',
+2026-04-06 21:23:31:   address: '::',
+2026-04-06 21:23:31:   port: 8080
+2026-04-06 21:23:31: }
+2026-04-06 21:23:32: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:23:37:  ⨯ Failed to start server
+2026-04-06 21:23:37: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:23:37:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:23:37:     at new Promise (<anonymous>) {
+2026-04-06 21:23:37:   code: 'EADDRINUSE',
+2026-04-06 21:23:37:   errno: -98,
+2026-04-06 21:23:37:   syscall: 'listen',
+2026-04-06 21:23:37:   address: '::',
+2026-04-06 21:23:37:   port: 8080
+2026-04-06 21:23:37: }
+2026-04-06 21:23:38: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:23:43:  ⨯ Failed to start server
+2026-04-06 21:23:43: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:23:43:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:23:43:     at new Promise (<anonymous>) {
+2026-04-06 21:23:43:   code: 'EADDRINUSE',
+2026-04-06 21:23:43:   errno: -98,
+2026-04-06 21:23:43:   syscall: 'listen',
+2026-04-06 21:23:43:   address: '::',
+2026-04-06 21:23:43:   port: 8080
+2026-04-06 21:23:43: }
+2026-04-06 21:23:44: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:23:49:  ⨯ Failed to start server
+2026-04-06 21:23:49: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:23:49:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:23:49:     at new Promise (<anonymous>) {
+2026-04-06 21:23:49:   code: 'EADDRINUSE',
+2026-04-06 21:23:49:   errno: -98,
+2026-04-06 21:23:49:   syscall: 'listen',
+2026-04-06 21:23:49:   address: '::',
+2026-04-06 21:23:49:   port: 8080
+2026-04-06 21:23:49: }
+2026-04-06 21:23:49: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:23:55:  ⨯ Failed to start server
+2026-04-06 21:23:55: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:23:55:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:23:55:     at new Promise (<anonymous>) {
+2026-04-06 21:23:55:   code: 'EADDRINUSE',
+2026-04-06 21:23:55:   errno: -98,
+2026-04-06 21:23:55:   syscall: 'listen',
+2026-04-06 21:23:55:   address: '::',
+2026-04-06 21:23:55:   port: 8080
+2026-04-06 21:23:55: }
+2026-04-06 21:23:56: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:24:01: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:24:02: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:24:07: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:24:08: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:24:14: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:24:14: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:24:20: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:24:20: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:24:26: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:24:26: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:24:32: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:24:33: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:24:38: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:24:39: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:24:44: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:24:45: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:24:50: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:24:51: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:24:56:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2026-04-06 21:24:56: Invalid project directory provided, no such directory: /etc/neron/client_vocal/next
+2026-04-06 21:24:57: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:25:01:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2026-04-06 21:25:01: Invalid project directory provided, no such directory: /etc/neron/client_vocal/next
+2026-04-06 21:25:03: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:25:06:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2026-04-06 21:25:06: Invalid project directory provided, no such directory: /etc/neron/client_vocal/next
+2026-04-06 21:25:09: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:25:12:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2026-04-06 21:25:12: Invalid project directory provided, no such directory: /etc/neron/client_vocal/next
+2026-04-06 21:25:16: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:25:17:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2026-04-06 21:25:17: Invalid project directory provided, no such directory: /etc/neron/client_vocal/next
+2026-04-06 21:25:23:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2026-04-06 21:25:23: Invalid project directory provided, no such directory: /etc/neron/client_vocal/next
+2026-04-06 21:25:23: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:25:29:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2026-04-06 21:25:29: Invalid project directory provided, no such directory: /etc/neron/client_vocal/next
+2026-04-06 21:25:30: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:25:34:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2026-04-06 21:25:34: Invalid project directory provided, no such directory: /etc/neron/client_vocal/next
+2026-04-06 21:25:37: [Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id]
+2026-04-06 21:25:40:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2026-04-06 21:25:40: Invalid project directory provided, no such directory: /etc/neron/client_vocal/next
+2026-04-06 21:25:44:  ⚠ "next start" does not work with "output: standalone" configuration. Use "node .next/standalone/server.js" instead.
+2026-04-06 21:25:45:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2026-04-06 21:25:45: Invalid project directory provided, no such directory: /etc/neron/client_vocal/next
+2026-04-06 21:25:51:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2026-04-06 21:25:51: Invalid project directory provided, no such directory: /etc/neron/client_vocal/next
+2026-04-06 21:25:56:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2026-04-06 21:25:57: Invalid project directory provided, no such directory: /etc/neron/client_vocal/next
+2026-04-06 21:26:02:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2026-04-06 21:26:02: Invalid project directory provided, no such directory: /etc/neron/client_vocal/next
+2026-04-06 21:26:08:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2026-04-06 21:26:08: Invalid project directory provided, no such directory: /etc/neron/client_vocal/next
+2026-04-06 21:26:13:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2026-04-06 21:26:13: Invalid project directory provided, no such directory: /etc/neron/client_vocal/next
+2026-04-06 21:26:18:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2026-04-06 21:26:18: Invalid project directory provided, no such directory: /etc/neron/client_vocal/next
+2026-04-06 21:26:24:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2026-04-06 21:26:24: Invalid project directory provided, no such directory: /etc/neron/client_vocal/next
+2026-04-06 21:26:29:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2026-04-06 21:26:29: Invalid project directory provided, no such directory: /etc/neron/client_vocal/next
+2026-04-06 21:26:38:  ⨯ Failed to start server
+2026-04-06 21:26:38: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:26:38:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:26:38:     at new Promise (<anonymous>) {
+2026-04-06 21:26:38:   code: 'EADDRINUSE',
+2026-04-06 21:26:38:   errno: -98,
+2026-04-06 21:26:38:   syscall: 'listen',
+2026-04-06 21:26:38:   address: '::',
+2026-04-06 21:26:38:   port: 8080
+2026-04-06 21:26:38: }
+2026-04-06 21:26:44:  ⨯ Failed to start server
+2026-04-06 21:26:44: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:26:44:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:26:44:     at new Promise (<anonymous>) {
+2026-04-06 21:26:44:   code: 'EADDRINUSE',
+2026-04-06 21:26:44:   errno: -98,
+2026-04-06 21:26:44:   syscall: 'listen',
+2026-04-06 21:26:44:   address: '::',
+2026-04-06 21:26:44:   port: 8080
+2026-04-06 21:26:44: }
+2026-04-06 21:26:50:  ⨯ Failed to start server
+2026-04-06 21:26:50: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:26:50:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:26:50:     at new Promise (<anonymous>) {
+2026-04-06 21:26:50:   code: 'EADDRINUSE',
+2026-04-06 21:26:50:   errno: -98,
+2026-04-06 21:26:50:   syscall: 'listen',
+2026-04-06 21:26:50:   address: '::',
+2026-04-06 21:26:50:   port: 8080
+2026-04-06 21:26:50: }
+2026-04-06 21:26:56:  ⨯ Failed to start server
+2026-04-06 21:26:56: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:26:56:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:26:56:     at new Promise (<anonymous>) {
+2026-04-06 21:26:56:   code: 'EADDRINUSE',
+2026-04-06 21:26:56:   errno: -98,
+2026-04-06 21:26:56:   syscall: 'listen',
+2026-04-06 21:26:56:   address: '::',
+2026-04-06 21:26:56:   port: 8080
+2026-04-06 21:26:56: }
+2026-04-06 21:27:02:  ⨯ Failed to start server
+2026-04-06 21:27:02: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:27:02:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:27:02:     at new Promise (<anonymous>) {
+2026-04-06 21:27:02:   code: 'EADDRINUSE',
+2026-04-06 21:27:02:   errno: -98,
+2026-04-06 21:27:02:   syscall: 'listen',
+2026-04-06 21:27:02:   address: '::',
+2026-04-06 21:27:02:   port: 8080
+2026-04-06 21:27:02: }
+2026-04-06 21:27:08:  ⨯ Failed to start server
+2026-04-06 21:27:08: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:27:08:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:27:08:     at new Promise (<anonymous>) {
+2026-04-06 21:27:08:   code: 'EADDRINUSE',
+2026-04-06 21:27:08:   errno: -98,
+2026-04-06 21:27:08:   syscall: 'listen',
+2026-04-06 21:27:08:   address: '::',
+2026-04-06 21:27:08:   port: 8080
+2026-04-06 21:27:08: }
+2026-04-06 21:27:14:  ⨯ Failed to start server
+2026-04-06 21:27:14: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:27:14:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:27:14:     at new Promise (<anonymous>) {
+2026-04-06 21:27:14:   code: 'EADDRINUSE',
+2026-04-06 21:27:14:   errno: -98,
+2026-04-06 21:27:14:   syscall: 'listen',
+2026-04-06 21:27:14:   address: '::',
+2026-04-06 21:27:14:   port: 8080
+2026-04-06 21:27:14: }
+2026-04-06 21:27:19:  ⨯ Failed to start server
+2026-04-06 21:27:19: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:27:19:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:27:19:     at new Promise (<anonymous>) {
+2026-04-06 21:27:19:   code: 'EADDRINUSE',
+2026-04-06 21:27:19:   errno: -98,
+2026-04-06 21:27:19:   syscall: 'listen',
+2026-04-06 21:27:19:   address: '::',
+2026-04-06 21:27:19:   port: 8080
+2026-04-06 21:27:19: }
+2026-04-06 21:27:25:  ⨯ Failed to start server
+2026-04-06 21:27:25: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:27:25:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:27:25:     at new Promise (<anonymous>) {
+2026-04-06 21:27:25:   code: 'EADDRINUSE',
+2026-04-06 21:27:25:   errno: -98,
+2026-04-06 21:27:25:   syscall: 'listen',
+2026-04-06 21:27:25:   address: '::',
+2026-04-06 21:27:25:   port: 8080
+2026-04-06 21:27:25: }
+2026-04-06 21:27:31:  ⨯ Failed to start server
+2026-04-06 21:27:31: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:27:31:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:27:31:     at new Promise (<anonymous>) {
+2026-04-06 21:27:31:   code: 'EADDRINUSE',
+2026-04-06 21:27:31:   errno: -98,
+2026-04-06 21:27:31:   syscall: 'listen',
+2026-04-06 21:27:31:   address: '::',
+2026-04-06 21:27:31:   port: 8080
+2026-04-06 21:27:31: }
+2026-04-06 21:27:37:  ⨯ Failed to start server
+2026-04-06 21:27:37: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:27:37:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:27:37:     at new Promise (<anonymous>) {
+2026-04-06 21:27:37:   code: 'EADDRINUSE',
+2026-04-06 21:27:37:   errno: -98,
+2026-04-06 21:27:37:   syscall: 'listen',
+2026-04-06 21:27:37:   address: '::',
+2026-04-06 21:27:37:   port: 8080
+2026-04-06 21:27:37: }
+2026-04-06 21:27:40:  ⨯ Failed to start server
+2026-04-06 21:27:40: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:27:40:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:27:40:     at new Promise (<anonymous>) {
+2026-04-06 21:27:40:   code: 'EADDRINUSE',
+2026-04-06 21:27:40:   errno: -98,
+2026-04-06 21:27:40:   syscall: 'listen',
+2026-04-06 21:27:40:   address: '::',
+2026-04-06 21:27:40:   port: 8080
+2026-04-06 21:27:40: }
+2026-04-06 21:27:46:  ⨯ Failed to start server
+2026-04-06 21:27:46: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:27:46:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:27:46:     at new Promise (<anonymous>) {
+2026-04-06 21:27:46:   code: 'EADDRINUSE',
+2026-04-06 21:27:46:   errno: -98,
+2026-04-06 21:27:46:   syscall: 'listen',
+2026-04-06 21:27:46:   address: '::',
+2026-04-06 21:27:46:   port: 8080
+2026-04-06 21:27:46: }
+2026-04-06 21:27:52:  ⨯ Failed to start server
+2026-04-06 21:27:52: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:27:52:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:27:52:     at new Promise (<anonymous>) {
+2026-04-06 21:27:52:   code: 'EADDRINUSE',
+2026-04-06 21:27:52:   errno: -98,
+2026-04-06 21:27:52:   syscall: 'listen',
+2026-04-06 21:27:52:   address: '::',
+2026-04-06 21:27:52:   port: 8080
+2026-04-06 21:27:52: }
+2026-04-06 21:27:58:  ⨯ Failed to start server
+2026-04-06 21:27:58: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:27:58:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:27:58:     at new Promise (<anonymous>) {
+2026-04-06 21:27:58:   code: 'EADDRINUSE',
+2026-04-06 21:27:58:   errno: -98,
+2026-04-06 21:27:58:   syscall: 'listen',
+2026-04-06 21:27:58:   address: '::',
+2026-04-06 21:27:58:   port: 8080
+2026-04-06 21:27:58: }
+2026-04-06 21:28:04:  ⨯ Failed to start server
+2026-04-06 21:28:04: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:28:04:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:28:04:     at new Promise (<anonymous>) {
+2026-04-06 21:28:04:   code: 'EADDRINUSE',
+2026-04-06 21:28:04:   errno: -98,
+2026-04-06 21:28:04:   syscall: 'listen',
+2026-04-06 21:28:04:   address: '::',
+2026-04-06 21:28:04:   port: 8080
+2026-04-06 21:28:04: }
+2026-04-06 21:28:10:  ⨯ Failed to start server
+2026-04-06 21:28:10: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:28:10:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:28:10:     at new Promise (<anonymous>) {
+2026-04-06 21:28:10:   code: 'EADDRINUSE',
+2026-04-06 21:28:10:   errno: -98,
+2026-04-06 21:28:10:   syscall: 'listen',
+2026-04-06 21:28:10:   address: '::',
+2026-04-06 21:28:10:   port: 8080
+2026-04-06 21:28:10: }
+2026-04-06 21:28:16:  ⨯ Failed to start server
+2026-04-06 21:28:16: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:28:16:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:28:16:     at new Promise (<anonymous>) {
+2026-04-06 21:28:16:   code: 'EADDRINUSE',
+2026-04-06 21:28:16:   errno: -98,
+2026-04-06 21:28:16:   syscall: 'listen',
+2026-04-06 21:28:16:   address: '::',
+2026-04-06 21:28:16:   port: 8080
+2026-04-06 21:28:16: }
+2026-04-06 21:28:22:  ⨯ Failed to start server
+2026-04-06 21:28:22: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:28:22:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:28:22:     at new Promise (<anonymous>) {
+2026-04-06 21:28:22:   code: 'EADDRINUSE',
+2026-04-06 21:28:22:   errno: -98,
+2026-04-06 21:28:22:   syscall: 'listen',
+2026-04-06 21:28:22:   address: '::',
+2026-04-06 21:28:22:   port: 8080
+2026-04-06 21:28:22: }
+2026-04-06 21:28:28:  ⨯ Failed to start server
+2026-04-06 21:28:28: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:28:28:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:28:28:     at new Promise (<anonymous>) {
+2026-04-06 21:28:28:   code: 'EADDRINUSE',
+2026-04-06 21:28:28:   errno: -98,
+2026-04-06 21:28:28:   syscall: 'listen',
+2026-04-06 21:28:28:   address: '::',
+2026-04-06 21:28:28:   port: 8080
+2026-04-06 21:28:28: }
+2026-04-06 21:28:34:  ⨯ Failed to start server
+2026-04-06 21:28:34: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:28:34:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:28:34:     at new Promise (<anonymous>) {
+2026-04-06 21:28:34:   code: 'EADDRINUSE',
+2026-04-06 21:28:34:   errno: -98,
+2026-04-06 21:28:34:   syscall: 'listen',
+2026-04-06 21:28:34:   address: '::',
+2026-04-06 21:28:34:   port: 8080
+2026-04-06 21:28:34: }
+2026-04-06 21:28:39:  ⨯ Failed to start server
+2026-04-06 21:28:39: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:28:39:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:28:39:     at new Promise (<anonymous>) {
+2026-04-06 21:28:39:   code: 'EADDRINUSE',
+2026-04-06 21:28:39:   errno: -98,
+2026-04-06 21:28:39:   syscall: 'listen',
+2026-04-06 21:28:39:   address: '::',
+2026-04-06 21:28:39:   port: 8080
+2026-04-06 21:28:39: }
+2026-04-06 21:28:45:  ⨯ Failed to start server
+2026-04-06 21:28:45: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:28:45:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:28:45:     at new Promise (<anonymous>) {
+2026-04-06 21:28:45:   code: 'EADDRINUSE',
+2026-04-06 21:28:45:   errno: -98,
+2026-04-06 21:28:45:   syscall: 'listen',
+2026-04-06 21:28:45:   address: '::',
+2026-04-06 21:28:45:   port: 8080
+2026-04-06 21:28:45: }
+2026-04-06 21:28:51:  ⨯ Failed to start server
+2026-04-06 21:28:51: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:28:51:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:28:51:     at new Promise (<anonymous>) {
+2026-04-06 21:28:51:   code: 'EADDRINUSE',
+2026-04-06 21:28:51:   errno: -98,
+2026-04-06 21:28:51:   syscall: 'listen',
+2026-04-06 21:28:51:   address: '::',
+2026-04-06 21:28:51:   port: 8080
+2026-04-06 21:28:51: }
+2026-04-06 21:28:57:  ⨯ Failed to start server
+2026-04-06 21:28:57: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:28:57:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:28:57:     at new Promise (<anonymous>) {
+2026-04-06 21:28:57:   code: 'EADDRINUSE',
+2026-04-06 21:28:57:   errno: -98,
+2026-04-06 21:28:57:   syscall: 'listen',
+2026-04-06 21:28:57:   address: '::',
+2026-04-06 21:28:57:   port: 8080
+2026-04-06 21:28:57: }
+2026-04-06 21:29:03:  ⨯ Failed to start server
+2026-04-06 21:29:03: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:29:03:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:29:03:     at new Promise (<anonymous>) {
+2026-04-06 21:29:03:   code: 'EADDRINUSE',
+2026-04-06 21:29:03:   errno: -98,
+2026-04-06 21:29:03:   syscall: 'listen',
+2026-04-06 21:29:03:   address: '::',
+2026-04-06 21:29:03:   port: 8080
+2026-04-06 21:29:03: }
+2026-04-06 21:29:09:  ⨯ Failed to start server
+2026-04-06 21:29:09: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:29:09:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:29:09:     at new Promise (<anonymous>) {
+2026-04-06 21:29:09:   code: 'EADDRINUSE',
+2026-04-06 21:29:09:   errno: -98,
+2026-04-06 21:29:09:   syscall: 'listen',
+2026-04-06 21:29:09:   address: '::',
+2026-04-06 21:29:09:   port: 8080
+2026-04-06 21:29:09: }
+2026-04-06 21:29:15:  ⨯ Failed to start server
+2026-04-06 21:29:15: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:29:15:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:29:15:     at new Promise (<anonymous>) {
+2026-04-06 21:29:15:   code: 'EADDRINUSE',
+2026-04-06 21:29:15:   errno: -98,
+2026-04-06 21:29:15:   syscall: 'listen',
+2026-04-06 21:29:15:   address: '::',
+2026-04-06 21:29:15:   port: 8080
+2026-04-06 21:29:15: }
+2026-04-06 21:29:21:  ⨯ Failed to start server
+2026-04-06 21:29:21: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:29:21:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:29:21:     at new Promise (<anonymous>) {
+2026-04-06 21:29:21:   code: 'EADDRINUSE',
+2026-04-06 21:29:21:   errno: -98,
+2026-04-06 21:29:21:   syscall: 'listen',
+2026-04-06 21:29:21:   address: '::',
+2026-04-06 21:29:21:   port: 8080
+2026-04-06 21:29:21: }
+2026-04-06 21:29:27:  ⨯ Failed to start server
+2026-04-06 21:29:27: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:29:27:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:29:27:     at new Promise (<anonymous>) {
+2026-04-06 21:29:27:   code: 'EADDRINUSE',
+2026-04-06 21:29:27:   errno: -98,
+2026-04-06 21:29:27:   syscall: 'listen',
+2026-04-06 21:29:27:   address: '::',
+2026-04-06 21:29:27:   port: 8080
+2026-04-06 21:29:27: }
+2026-04-06 21:29:33:  ⨯ Failed to start server
+2026-04-06 21:29:33: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:29:33:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:29:33:     at new Promise (<anonymous>) {
+2026-04-06 21:29:33:   code: 'EADDRINUSE',
+2026-04-06 21:29:33:   errno: -98,
+2026-04-06 21:29:33:   syscall: 'listen',
+2026-04-06 21:29:33:   address: '::',
+2026-04-06 21:29:33:   port: 8080
+2026-04-06 21:29:33: }
+2026-04-06 21:29:38:  ⨯ Failed to start server
+2026-04-06 21:29:38: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:29:38:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:29:38:     at new Promise (<anonymous>) {
+2026-04-06 21:29:38:   code: 'EADDRINUSE',
+2026-04-06 21:29:38:   errno: -98,
+2026-04-06 21:29:38:   syscall: 'listen',
+2026-04-06 21:29:38:   address: '::',
+2026-04-06 21:29:38:   port: 8080
+2026-04-06 21:29:38: }
+2026-04-06 21:29:44:  ⨯ Failed to start server
+2026-04-06 21:29:44: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:29:44:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:29:44:     at new Promise (<anonymous>) {
+2026-04-06 21:29:44:   code: 'EADDRINUSE',
+2026-04-06 21:29:44:   errno: -98,
+2026-04-06 21:29:44:   syscall: 'listen',
+2026-04-06 21:29:44:   address: '::',
+2026-04-06 21:29:44:   port: 8080
+2026-04-06 21:29:44: }
+2026-04-06 21:29:50:  ⨯ Failed to start server
+2026-04-06 21:29:50: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:29:50:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:29:50:     at new Promise (<anonymous>) {
+2026-04-06 21:29:50:   code: 'EADDRINUSE',
+2026-04-06 21:29:50:   errno: -98,
+2026-04-06 21:29:50:   syscall: 'listen',
+2026-04-06 21:29:50:   address: '::',
+2026-04-06 21:29:50:   port: 8080
+2026-04-06 21:29:50: }
+2026-04-06 21:29:56:  ⨯ Failed to start server
+2026-04-06 21:29:56: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:29:56:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:29:56:     at new Promise (<anonymous>) {
+2026-04-06 21:29:56:   code: 'EADDRINUSE',
+2026-04-06 21:29:56:   errno: -98,
+2026-04-06 21:29:56:   syscall: 'listen',
+2026-04-06 21:29:56:   address: '::',
+2026-04-06 21:29:56:   port: 8080
+2026-04-06 21:29:56: }
+2026-04-06 21:30:02:  ⨯ Failed to start server
+2026-04-06 21:30:02: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:30:02:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:30:02:     at new Promise (<anonymous>) {
+2026-04-06 21:30:02:   code: 'EADDRINUSE',
+2026-04-06 21:30:02:   errno: -98,
+2026-04-06 21:30:02:   syscall: 'listen',
+2026-04-06 21:30:02:   address: '::',
+2026-04-06 21:30:02:   port: 8080
+2026-04-06 21:30:02: }
+2026-04-06 21:30:08:  ⨯ Failed to start server
+2026-04-06 21:30:08: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:30:08:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:30:08:     at new Promise (<anonymous>) {
+2026-04-06 21:30:08:   code: 'EADDRINUSE',
+2026-04-06 21:30:08:   errno: -98,
+2026-04-06 21:30:08:   syscall: 'listen',
+2026-04-06 21:30:08:   address: '::',
+2026-04-06 21:30:08:   port: 8080
+2026-04-06 21:30:08: }
+2026-04-06 21:30:14:  ⨯ Failed to start server
+2026-04-06 21:30:14: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:30:14:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:30:14:     at new Promise (<anonymous>) {
+2026-04-06 21:30:14:   code: 'EADDRINUSE',
+2026-04-06 21:30:14:   errno: -98,
+2026-04-06 21:30:14:   syscall: 'listen',
+2026-04-06 21:30:14:   address: '::',
+2026-04-06 21:30:14:   port: 8080
+2026-04-06 21:30:14: }
+2026-04-06 21:30:20:  ⨯ Failed to start server
+2026-04-06 21:30:20: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:30:20:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:30:20:     at new Promise (<anonymous>) {
+2026-04-06 21:30:20:   code: 'EADDRINUSE',
+2026-04-06 21:30:20:   errno: -98,
+2026-04-06 21:30:20:   syscall: 'listen',
+2026-04-06 21:30:20:   address: '::',
+2026-04-06 21:30:20:   port: 8080
+2026-04-06 21:30:20: }
+2026-04-06 21:30:25:  ⨯ Failed to start server
+2026-04-06 21:30:25: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:30:25:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:30:25:     at new Promise (<anonymous>) {
+2026-04-06 21:30:25:   code: 'EADDRINUSE',
+2026-04-06 21:30:25:   errno: -98,
+2026-04-06 21:30:25:   syscall: 'listen',
+2026-04-06 21:30:25:   address: '::',
+2026-04-06 21:30:25:   port: 8080
+2026-04-06 21:30:25: }
+2026-04-06 21:30:31:  ⨯ Failed to start server
+2026-04-06 21:30:31: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:30:31:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:30:31:     at new Promise (<anonymous>) {
+2026-04-06 21:30:31:   code: 'EADDRINUSE',
+2026-04-06 21:30:31:   errno: -98,
+2026-04-06 21:30:31:   syscall: 'listen',
+2026-04-06 21:30:31:   address: '::',
+2026-04-06 21:30:31:   port: 8080
+2026-04-06 21:30:31: }
+2026-04-06 21:30:37:  ⨯ Failed to start server
+2026-04-06 21:30:37: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:30:37:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:30:37:     at new Promise (<anonymous>) {
+2026-04-06 21:30:37:   code: 'EADDRINUSE',
+2026-04-06 21:30:37:   errno: -98,
+2026-04-06 21:30:37:   syscall: 'listen',
+2026-04-06 21:30:37:   address: '::',
+2026-04-06 21:30:37:   port: 8080
+2026-04-06 21:30:37: }
+2026-04-06 21:30:43:  ⨯ Failed to start server
+2026-04-06 21:30:43: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:30:43:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:30:43:     at new Promise (<anonymous>) {
+2026-04-06 21:30:43:   code: 'EADDRINUSE',
+2026-04-06 21:30:43:   errno: -98,
+2026-04-06 21:30:43:   syscall: 'listen',
+2026-04-06 21:30:43:   address: '::',
+2026-04-06 21:30:43:   port: 8080
+2026-04-06 21:30:43: }
+2026-04-06 21:30:49:  ⨯ Failed to start server
+2026-04-06 21:30:49: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:30:49:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:30:49:     at new Promise (<anonymous>) {
+2026-04-06 21:30:49:   code: 'EADDRINUSE',
+2026-04-06 21:30:49:   errno: -98,
+2026-04-06 21:30:49:   syscall: 'listen',
+2026-04-06 21:30:49:   address: '::',
+2026-04-06 21:30:49:   port: 8080
+2026-04-06 21:30:49: }
+2026-04-06 21:30:55:  ⨯ Failed to start server
+2026-04-06 21:30:55: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:30:55:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:30:55:     at new Promise (<anonymous>) {
+2026-04-06 21:30:55:   code: 'EADDRINUSE',
+2026-04-06 21:30:55:   errno: -98,
+2026-04-06 21:30:55:   syscall: 'listen',
+2026-04-06 21:30:55:   address: '::',
+2026-04-06 21:30:55:   port: 8080
+2026-04-06 21:30:55: }
+2026-04-06 21:31:01:  ⨯ Failed to start server
+2026-04-06 21:31:01: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:31:01:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:31:01:     at new Promise (<anonymous>) {
+2026-04-06 21:31:01:   code: 'EADDRINUSE',
+2026-04-06 21:31:01:   errno: -98,
+2026-04-06 21:31:01:   syscall: 'listen',
+2026-04-06 21:31:01:   address: '::',
+2026-04-06 21:31:01:   port: 8080
+2026-04-06 21:31:01: }
+2026-04-06 21:31:07:  ⨯ Failed to start server
+2026-04-06 21:31:07: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:31:07:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:31:07:     at new Promise (<anonymous>) {
+2026-04-06 21:31:07:   code: 'EADDRINUSE',
+2026-04-06 21:31:07:   errno: -98,
+2026-04-06 21:31:07:   syscall: 'listen',
+2026-04-06 21:31:07:   address: '::',
+2026-04-06 21:31:07:   port: 8080
+2026-04-06 21:31:07: }
+2026-04-06 21:31:12:  ⨯ Failed to start server
+2026-04-06 21:31:12: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:31:12:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:31:12:     at new Promise (<anonymous>) {
+2026-04-06 21:31:12:   code: 'EADDRINUSE',
+2026-04-06 21:31:12:   errno: -98,
+2026-04-06 21:31:12:   syscall: 'listen',
+2026-04-06 21:31:12:   address: '::',
+2026-04-06 21:31:12:   port: 8080
+2026-04-06 21:31:12: }
+2026-04-06 21:31:18:  ⨯ Failed to start server
+2026-04-06 21:31:18: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:31:18:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:31:18:     at new Promise (<anonymous>) {
+2026-04-06 21:31:18:   code: 'EADDRINUSE',
+2026-04-06 21:31:18:   errno: -98,
+2026-04-06 21:31:18:   syscall: 'listen',
+2026-04-06 21:31:18:   address: '::',
+2026-04-06 21:31:18:   port: 8080
+2026-04-06 21:31:18: }
+2026-04-06 21:31:24:  ⨯ Failed to start server
+2026-04-06 21:31:24: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:31:24:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:31:24:     at new Promise (<anonymous>) {
+2026-04-06 21:31:24:   code: 'EADDRINUSE',
+2026-04-06 21:31:24:   errno: -98,
+2026-04-06 21:31:24:   syscall: 'listen',
+2026-04-06 21:31:24:   address: '::',
+2026-04-06 21:31:24:   port: 8080
+2026-04-06 21:31:24: }
+2026-04-06 21:31:30:  ⨯ Failed to start server
+2026-04-06 21:31:30: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:31:30:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:31:30:     at new Promise (<anonymous>) {
+2026-04-06 21:31:30:   code: 'EADDRINUSE',
+2026-04-06 21:31:30:   errno: -98,
+2026-04-06 21:31:30:   syscall: 'listen',
+2026-04-06 21:31:30:   address: '::',
+2026-04-06 21:31:30:   port: 8080
+2026-04-06 21:31:30: }
+2026-04-06 21:31:36:  ⨯ Failed to start server
+2026-04-06 21:31:36: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:31:36:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:31:36:     at new Promise (<anonymous>) {
+2026-04-06 21:31:36:   code: 'EADDRINUSE',
+2026-04-06 21:31:36:   errno: -98,
+2026-04-06 21:31:36:   syscall: 'listen',
+2026-04-06 21:31:36:   address: '::',
+2026-04-06 21:31:36:   port: 8080
+2026-04-06 21:31:36: }
+2026-04-06 21:31:42:  ⨯ Failed to start server
+2026-04-06 21:31:42: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:31:42:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:31:42:     at new Promise (<anonymous>) {
+2026-04-06 21:31:42:   code: 'EADDRINUSE',
+2026-04-06 21:31:42:   errno: -98,
+2026-04-06 21:31:42:   syscall: 'listen',
+2026-04-06 21:31:42:   address: '::',
+2026-04-06 21:31:42:   port: 8080
+2026-04-06 21:31:42: }
+2026-04-06 21:31:48:  ⨯ Failed to start server
+2026-04-06 21:31:48: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:31:48:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:31:48:     at new Promise (<anonymous>) {
+2026-04-06 21:31:48:   code: 'EADDRINUSE',
+2026-04-06 21:31:48:   errno: -98,
+2026-04-06 21:31:48:   syscall: 'listen',
+2026-04-06 21:31:48:   address: '::',
+2026-04-06 21:31:48:   port: 8080
+2026-04-06 21:31:48: }
+2026-04-06 21:31:54:  ⨯ Failed to start server
+2026-04-06 21:31:54: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:31:54:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:31:54:     at new Promise (<anonymous>) {
+2026-04-06 21:31:54:   code: 'EADDRINUSE',
+2026-04-06 21:31:54:   errno: -98,
+2026-04-06 21:31:54:   syscall: 'listen',
+2026-04-06 21:31:54:   address: '::',
+2026-04-06 21:31:54:   port: 8080
+2026-04-06 21:31:54: }
+2026-04-06 21:32:00:  ⨯ Failed to start server
+2026-04-06 21:32:00: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:32:00:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:32:00:     at new Promise (<anonymous>) {
+2026-04-06 21:32:00:   code: 'EADDRINUSE',
+2026-04-06 21:32:00:   errno: -98,
+2026-04-06 21:32:00:   syscall: 'listen',
+2026-04-06 21:32:00:   address: '::',
+2026-04-06 21:32:00:   port: 8080
+2026-04-06 21:32:00: }
+2026-04-06 21:32:05:  ⨯ Failed to start server
+2026-04-06 21:32:05: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:32:05:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:32:05:     at new Promise (<anonymous>) {
+2026-04-06 21:32:05:   code: 'EADDRINUSE',
+2026-04-06 21:32:05:   errno: -98,
+2026-04-06 21:32:05:   syscall: 'listen',
+2026-04-06 21:32:05:   address: '::',
+2026-04-06 21:32:05:   port: 8080
+2026-04-06 21:32:05: }
+2026-04-06 21:32:12:  ⨯ Failed to start server
+2026-04-06 21:32:12: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:32:12:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:32:12:     at new Promise (<anonymous>) {
+2026-04-06 21:32:12:   code: 'EADDRINUSE',
+2026-04-06 21:32:12:   errno: -98,
+2026-04-06 21:32:12:   syscall: 'listen',
+2026-04-06 21:32:12:   address: '::',
+2026-04-06 21:32:12:   port: 8080
+2026-04-06 21:32:12: }
+2026-04-06 21:32:17:  ⨯ Failed to start server
+2026-04-06 21:32:17: Error: listen EADDRINUSE: address already in use :::8080
+2026-04-06 21:32:17:     at <unknown> (Error: listen EADDRINUSE: address already in use :::8080)
+2026-04-06 21:32:17:     at new Promise (<anonymous>) {
+2026-04-06 21:32:17:   code: 'EADDRINUSE',
+2026-04-06 21:32:17:   errno: -98,
+2026-04-06 21:32:17:   syscall: 'listen',
+2026-04-06 21:32:17:   address: '::',
+2026-04-06 21:32:17:   port: 8080
+2026-04-06 21:32:17: }
