@@ -2,17 +2,16 @@ module.exports = {
   apps: [
     {
       name: 'neron-vocal',
-      script: 'npx',
-      args: 'next start',
-      cwd: './',
+      script: 'node',
+      args: 'server.js',
+      cwd: '/etc/neron/client_vocal',
       watch: false,
       autorestart: true,
       restart_delay: 5000,
       max_restarts: 10,
       env: {
         NODE_ENV: 'production',
-        PROD: 3001,
-        NERON_CORE_URL: 'http://localhost:8000',
+        NERON_CORE_URL: 'http://localhost:8010',
         NERON_STT_URL:  'http://localhost:8001',
       },
       out_file:   './logs/neron-out.log',
