@@ -3,15 +3,15 @@ import { runtimeConfig } from '@/lib/config'
 
 export async function POST(req: NextRequest) {
   try {
-    const body = await req.json()
-
-    const headers: Record<string, string> = { 'Content-Type': 'application/json' }
+    const formData = await req.formData()
+    const headers: Record<string, string> = {}
     if (runtimeConfig.apiKey) headers['X-API-Key'] = runtimeConfig.apiKey
 
-    const upstream = await fetch(`${runtimeConfig.coreUrl}/input/text`, {
-      method:  'POST',
+    const upstream = await fetch(`${runtimeConfig.coreUrl}/input/audio`, {
+      method: 'POST',
       headers,
-      body:    JSON.stringify(body),
+      body: formData,
+      signal: AbortSignal.timeout(120_000),
     })
 
     if (!upstream.ok) {
@@ -21,8 +21,7 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json(await upstream.json())
   } catch (err) {
-    const message = err instanceof Error ? err.message : 'Core proxy error'
-    console.error('Core proxy error:', err)
-    return NextResponse.json({ error: `Core inaccessible : ${message}` }, { status: 502 })
+    const message = err instanceof Error ? err.message : 'audio proxy error'
+    return NextResponse.json({ error: message }, { status: 502 })
   }
 }

@@ -26,13 +26,19 @@ interface AgentsData {
   [key: string]: unknown
 }
 
+interface AudioResponse {
+  transcription?: string
+  response?:      string
+  error?:         string
+}
+
 /* ------------------------------------------------------------------ */
 /* Constants                                                            */
 /* ------------------------------------------------------------------ */
 
-const BAR_COUNT       = 15
-const FETCH_TIMEOUT   = 30_000
-const AGENTS_POLL_MS  = 10_000
+const BAR_COUNT      = 15
+const FETCH_TIMEOUT  = 120_000
+const AGENTS_POLL_MS = 10_000
 
 const STATUS: Record<VoiceState, string> = {
   idle:       'Appuyer pour parler',
@@ -47,7 +53,8 @@ const AGENT_LABELS: Record<string, string> = {
   ha:       'HomeAssist',
   telegram: 'Telegram',
   watchdog: 'Watchdog',
-  gateway:  'Gateway',
+  stt:      'STT',
+  tts:      'TTS',
 }
 
 /* ------------------------------------------------------------------ */
@@ -68,14 +75,14 @@ function IconMic() {
 function IconLoader() {
   return (
     <>
-      <line x1="12"   y1="2"     x2="12"   y2="6"/>
-      <line x1="12"   y1="18"    x2="12"   y2="22"/>
-      <line x1="4.93" y1="4.93"  x2="7.76" y2="7.76"/>
-      <line x1="16.24"y1="16.24" x2="19.07"y2="19.07"/>
-      <line x1="2"    y1="12"    x2="6"    y2="12"/>
-      <line x1="18"   y1="12"    x2="22"   y2="12"/>
-      <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/>
-      <line x1="16.24"y1="7.76"  x2="19.07"y2="4.93"/>
+      <line x1="12"    y1="2"     x2="12"    y2="6"/>
+      <line x1="12"    y1="18"    x2="12"    y2="22"/>
+      <line x1="4.93"  y1="4.93"  x2="7.76"  y2="7.76"/>
+      <line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/>
+      <line x1="2"     y1="12"    x2="6"     y2="12"/>
+      <line x1="18"    y1="12"    x2="22"    y2="12"/>
+      <line x1="4.93"  y1="19.07" x2="7.76"  y2="16.24"/>
+      <line x1="16.24" y1="7.76"  x2="19.07" y2="4.93"/>
     </>
   )
 }
@@ -113,8 +120,8 @@ function withTimeout<T>(promise: Promise<T>, ms: number): Promise<T> {
 }
 
 function statusColor(s: string): string {
-  if (s === 'running') return 'var(--speaking)'
-  if (s === 'stopped') return 'var(--muted)'
+  if (s === 'running' || s === 'online') return 'var(--speaking)'
+  if (s === 'stopped' || s === 'offline') return 'var(--muted)'
   if (s === 'error')   return 'var(--danger)'
   return 'var(--accent)'
 }
@@ -130,11 +137,11 @@ interface AgentPanelProps {
 
 function AgentPanel({ agents, connected }: AgentPanelProps) {
   const connLabel =
-    connected === null  ? '...' :
-    connected           ? 'connecté' : 'hors ligne'
+    connected === null ? '...' :
+    connected          ? 'connecté' : 'hors ligne'
   const connColor =
-    connected === null  ? 'var(--muted)' :
-    connected           ? 'var(--speaking)' : 'var(--danger)'
+    connected === null ? 'var(--muted)' :
+    connected          ? 'var(--speaking)' : 'var(--danger)'
 
   return (
     <div className="agent-panel">
@@ -160,31 +167,32 @@ function AgentPanel({ agents, connected }: AgentPanelProps) {
 
 export default function Home() {
   /* ---------- State ---------- */
-  const [voiceState,    setVoiceStateRaw] = useState<VoiceState>('idle')
-  const [messages,      setMessages]      = useState<Msg[]>([])
-  const [hasMsgs,       setHasMsgs]       = useState(false)
-  const [settingsOpen,  setSettingsOpen]   = useState(false)
-  const [coreUrlInput,  setCoreUrlInput]   = useState('')
-  const [sttUrlInput,   setSttUrlInput]    = useState('')
-  const [apiKeyInput,   setApiKeyInput]    = useState('')
-  const [panelOpen,     setPanelOpen]      = useState(false)
+  const [voiceState,   setVoiceStateRaw] = useState<VoiceState>('idle')
+  const [messages,     setMessages]      = useState<Msg[]>([])
+  const [hasMsgs,      setHasMsgs]       = useState(false)
+  const [settingsOpen, setSettingsOpen]  = useState(false)
+  const [panelOpen,    setPanelOpen]     = useState(false)
+
+  /* Config lecture seule */
+  const [coreUrl, setCoreUrl] = useState('')
+  const [sttUrl,  setSttUrl]  = useState('')
+  const [apiKey,  setApiKey]  = useState('')
 
   /* Agent status */
   const [agents,    setAgents]    = useState<Record<string, AgentInfo> | null>(null)
   const [connected, setConnected] = useState<boolean | null>(null)
 
   /* ---------- Refs ---------- */
-  const voiceStateRef     = useRef<VoiceState>('idle')
-  const mediaRecorderRef  = useRef<MediaRecorder | null>(null)
-  const audioChunksRef    = useRef<Blob[]>([])
-  const audioStreamRef    = useRef<MediaStream | null>(null)
-  const waveformAnimRef   = useRef<number | null>(null)
-  const waveformDataRef   = useRef<{ el: HTMLDivElement; target: number; current: number; phase: number }[]>([])
-  const waveformBarsRef   = useRef<HTMLDivElement>(null)
-  const conversationRef   = useRef<HTMLDivElement>(null)
-  const msgIdRef          = useRef(0)
+  const voiceStateRef    = useRef<VoiceState>('idle')
+  const mediaRecorderRef = useRef<MediaRecorder | null>(null)
+  const audioChunksRef   = useRef<Blob[]>([])
+  const audioStreamRef   = useRef<MediaStream | null>(null)
+  const waveformAnimRef  = useRef<number | null>(null)
+  const waveformDataRef  = useRef<{ el: HTMLDivElement; target: number; current: number; phase: number }[]>([])
+  const waveformBarsRef  = useRef<HTMLDivElement>(null)
+  const conversationRef  = useRef<HTMLDivElement>(null)
+  const msgIdRef         = useRef(0)
 
-  /* Sync ref with state so callbacks always see the latest value */
   const setVoiceState = useCallback((s: VoiceState) => {
     voiceStateRef.current = s
     setVoiceStateRaw(s)
@@ -267,11 +275,11 @@ export default function Home() {
   /* ---------- Recording ---------- */
   const startRecording = useCallback(async () => {
     try {
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true })
+      const stream    = await navigator.mediaDevices.getUserMedia({ audio: true })
       audioStreamRef.current = stream
-      const mimeTypes  = ['audio/mp4', 'audio/webm;codecs=opus', 'audio/webm', 'audio/ogg;codecs=opus']
-      const mimeType   = mimeTypes.find(m => MediaRecorder.isTypeSupported(m)) ?? ''
-      const recorder   = mimeType ? new MediaRecorder(stream, { mimeType }) : new MediaRecorder(stream)
+      const mimeTypes = ['audio/mp4', 'audio/webm;codecs=opus', 'audio/webm', 'audio/ogg;codecs=opus']
+      const mimeType  = mimeTypes.find(m => MediaRecorder.isTypeSupported(m)) ?? ''
+      const recorder  = mimeType ? new MediaRecorder(stream, { mimeType }) : new MediaRecorder(stream)
       audioChunksRef.current = []
       recorder.ondataavailable = e => { if (e.data.size > 0) audioChunksRef.current.push(e.data) }
       recorder.start(100)
@@ -300,30 +308,24 @@ export default function Home() {
     })
   }, [])
 
-  /* ---------- API calls ---------- */
-  const sendToSTT = useCallback(async (blob: Blob): Promise<string> => {
+  /* ---------- Pipeline audio unifié ---------- */
+  const sendAudio = useCallback(async (blob: Blob): Promise<AudioResponse> => {
+    const ext      = blob.type.includes('mp4') ? '.m4a'
+                   : blob.type.includes('ogg') ? '.ogg'
+                   : '.webm'
     const formData = new FormData()
-    formData.append('file', blob, 'audio.wav')
-    const res  = await withTimeout(fetch('/api/stt', { method: 'POST', body: formData }), FETCH_TIMEOUT)
-    const data = await res.json()
-    if (!res.ok) throw new Error(data.error || `STT ${res.status}`)
-    return (data.text ?? '').trim()
-  }, [])
+    formData.append('file', blob, `audio${ext}`)
 
-  const sendToCore = useCallback(async (text: string): Promise<string> => {
     const res  = await withTimeout(
-      fetch('/api/core', {
-        method:  'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body:    JSON.stringify({ text }),
-      }),
+      fetch('/api/audio', { method: 'POST', body: formData }),
       FETCH_TIMEOUT
     )
-    const data = await res.json()
-    if (!res.ok) throw new Error(data.error || `Core ${res.status}`)
-    return (data.response ?? '').trim()
+    const data = await res.json() as AudioResponse
+    if (!res.ok) throw new Error(data.error || `Audio ${res.status}`)
+    return data
   }, [])
 
+  /* ---------- TTS ---------- */
   const speakText = useCallback((text: string): Promise<void> => {
     return new Promise(resolve => {
       if (!window.speechSynthesis) { resolve(); return }
@@ -335,36 +337,23 @@ export default function Home() {
       const voices = speechSynthesis.getVoices()
       const fr     = voices.find(v => v.lang.startsWith('fr'))
       if (fr) utter.voice = fr
-      utter.onend  = () => resolve()
+      utter.onend   = () => resolve()
       utter.onerror = () => resolve()
       speechSynthesis.speak(utter)
     })
   }, [])
 
-  /* ---------- Config ---------- */
+  /* ---------- Config lecture seule ---------- */
   const loadConfig = useCallback(() => {
     fetch('/api/config')
       .then(r => r.json())
       .then((data: { coreUrl: string; sttUrl: string; apiKey?: string }) => {
-        setCoreUrlInput(data.coreUrl ?? '')
-        setSttUrlInput(data.sttUrl ?? '')
-        setApiKeyInput(data.apiKey ?? '')
+        setCoreUrl(data.coreUrl ?? '')
+        setSttUrl(data.sttUrl  ?? '')
+        setApiKey(data.apiKey  ?? '')
       })
       .catch(() => {})
   }, [])
-
-  const saveConfig = useCallback(() => {
-    fetch('/api/config', {
-      method:  'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body:    JSON.stringify({
-        coreUrl: coreUrlInput.trim().replace(/\/$/, ''),
-        sttUrl:  sttUrlInput.trim().replace(/\/$/, ''),
-        apiKey:  apiKeyInput.trim(),
-      }),
-    }).catch(() => {})
-    setSettingsOpen(false)
-  }, [coreUrlInput, sttUrlInput, apiKeyInput])
 
   /* ---------- Main orb handler ---------- */
   const handleOrb = useCallback(async () => {
@@ -397,24 +386,25 @@ export default function Home() {
         const blob = await stopRecording()
         if (!blob) { addMessage('error', 'Système', 'Enregistrement échoué.'); setVoiceState('idle'); return }
 
-        const transcription = await sendToSTT(blob)
-        if (!transcription) { addMessage('error', 'Système', 'Transcription vide.'); setVoiceState('idle'); return }
+        // Un seul appel : audio → transcription + réponse
+        const result = await sendAudio(blob)
 
-        addMessage('user', 'Vous', transcription)
+        if (result.transcription) {
+          addMessage('user', 'Vous', result.transcription)
+        }
 
-        const reply = await sendToCore(transcription)
-        if (!reply) { setVoiceState('idle'); return }
+        if (!result.response) { setVoiceState('idle'); return }
 
-        addMessage('neron', 'Néron', reply)
+        addMessage('neron', 'Néron', result.response)
         setVoiceState('speaking')
-        await speakText(reply)
+        await speakText(result.response)
         setVoiceState('idle')
       } catch (e) {
         addMessage('error', 'Néron', e instanceof Error ? e.message : 'Erreur inconnue')
         setVoiceState('idle')
       }
     }
-  }, [addMessage, setVoiceState, startRecording, startWaveform, stopRecording, stopWaveform, sendToSTT, sendToCore, speakText])
+  }, [addMessage, setVoiceState, startRecording, startWaveform, stopRecording, stopWaveform, sendAudio, speakText])
 
   /* ---------- Init ---------- */
   useEffect(() => {
@@ -429,7 +419,6 @@ export default function Home() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  /* Keyboard: Escape closes settings/panel */
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (e.key === 'Escape') { setSettingsOpen(false); setPanelOpen(false) }
@@ -445,10 +434,9 @@ export default function Home() {
     return <IconMic />
   }
 
-  /* Connection indicator color */
   const connColor =
-    connected === null  ? 'var(--muted)' :
-    connected           ? 'var(--speaking)' : 'var(--danger)'
+    connected === null ? 'var(--muted)' :
+    connected          ? 'var(--speaking)' : 'var(--danger)'
 
   /* ------------------------------------------------------------------ */
   /* Render                                                               */
@@ -545,7 +533,7 @@ export default function Home() {
         </button>
       </div>
 
-      {/* Settings modal */}
+      {/* Settings modal — lecture seule */}
       <div
         className={`modal-overlay${settingsOpen ? ' open' : ''}`}
         role="dialog"
@@ -565,56 +553,21 @@ export default function Home() {
           </div>
 
           <div className="modal-field">
-            <label className="field-label" htmlFor="coreUrlInput">Core URL</label>
-            <input
-              className="field-input"
-              id="coreUrlInput"
-              type="url"
-              placeholder="http://localhost:8000"
-              autoComplete="off"
-              spellCheck={false}
-              value={coreUrlInput}
-              onChange={e => setCoreUrlInput(e.target.value)}
-              onKeyDown={e => { if (e.key === 'Enter') saveConfig() }}
-            />
+            <label className="field-label">Core URL</label>
+            <div className="field-value">{coreUrl || '—'}</div>
           </div>
 
           <div className="modal-field">
-            <label className="field-label" htmlFor="sttUrlInput">STT URL</label>
-            <input
-              className="field-input"
-              id="sttUrlInput"
-              type="url"
-              placeholder="http://localhost:8001"
-              autoComplete="off"
-              spellCheck={false}
-              value={sttUrlInput}
-              onChange={e => setSttUrlInput(e.target.value)}
-              onKeyDown={e => { if (e.key === 'Enter') saveConfig() }}
-            />
+            <label className="field-label">STT URL</label>
+            <div className="field-value">{sttUrl || '—'}</div>
           </div>
 
           <div className="modal-field">
-            <label className="field-label" htmlFor="apiKeyInput">API Key (optionnel)</label>
-            <input
-              className="field-input"
-              id="apiKeyInput"
-              type="password"
-              placeholder="neron-secret-key"
-              autoComplete="off"
-              spellCheck={false}
-              value={apiKeyInput}
-              onChange={e => setApiKeyInput(e.target.value)}
-              onKeyDown={e => { if (e.key === 'Enter') saveConfig() }}
-            />
+            <label className="field-label">API Key</label>
+            <div className="field-value">{apiKey ? '••••••••' : '—'}</div>
           </div>
 
-          <button className="save-btn" onClick={saveConfig}>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-              <polyline points="20 6 9 17 4 12"/>
-            </svg>
-            Enregistrer
-          </button>
+          <p className="modal-hint">Configurer via /etc/neron/neron.yaml</p>
         </div>
       </div>
     </>
